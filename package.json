@@ -1,0 +1,30 @@
+{
+  "name": "cleanblog",
+  "version": "1.0.0",
+  "description": "Clean Blog project.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-celebi/CleanBlog.git"
+  },
+  "keywords": [
+    "Blog",
+    "Node.js"
+  ],
+  "author": "com.batuhancelebi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/B-celebi/CleanBlog/issues"
+  },
+  "homepage": "https://github.com/B-celebi/CleanBlog#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
