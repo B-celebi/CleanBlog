@@ -34,8 +34,9 @@ app.get("/add_post", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about");
 });
-app.get("/post", (req, res) => {
-  res.render("/post");
+app.get("/post/:id", async (req, res) => {
+  const post = await PostDao.findById(req.params.id);
+  res.render("post", { post: post });
 });
 app.post("/post", async (req, res) => {
   await PostDao.create(req.body);
